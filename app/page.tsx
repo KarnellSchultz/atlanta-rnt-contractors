@@ -26,13 +26,13 @@ export default function Home() {
         </div>
       </div>
       <div className="relative text-center flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-pink-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        Atlanta R&T Contractors is a full-service contracting company. We specialize in residential
+        {`Atlanta R&T Contractors is a full-service contracting company. We specialize in residential
         and commercial roofing, siding, gutters, and painting. We are a family-owned and operated
         business with over 20 years of experience in the industry. Our goal is to provide you with
         the best service possible at an affordable price. We offer free estimates on all of our work
         so that you can make an informed decision about what's right for your home or business. If
         you're looking for quality workmanship at competitive prices, then look no further than
-        Atlanta R&T Contractors!
+        Atlanta R&T Contractors!`}
       </div>
       <div></div>
     </main>
