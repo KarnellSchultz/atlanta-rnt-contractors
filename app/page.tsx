@@ -3,11 +3,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex">
         <div className="flex flex-col items-center justify-center w-full h-full">
-          <h1 className="text-6xl font-bold text-center pb-4">Atlanta R&T Contractors</h1>
+          <h1 className="text-5xl font-bold pb-4 flex flex-col text-left">
+            <span>Atlanta R&T</span>
+            <span>Contractors</span>
+          </h1>˝
           <Image
-            className="rounded-full"
+            className="rounded-lg"
             src="/images/stock-man.jpeg"
             alt="Atlanta R&T Contracting Logo"
             width={300}
