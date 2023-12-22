@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={GeistSans.className}>
         <>
-          <header className="px-4 lg:px-6 h-14 flex items-center">
+          <header className="px-4 lg:px-6 h-16 flex items-center">
             <Link className="flex items-center justify-center" href="/">
               <span>
                 <HomeIcon className="h-6 w-6" />
@@ -24,17 +24,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="ml-2 text-lg font-semibold">{BRAND_NAME}</span>
             </Link>
             <nav className="ml-auto flex gap-4 sm:gap-6">
-              <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+              <Link className="text-sm font-medium hover:underline underline-offset-8" href="#">
                 Testimonials
               </Link>
               <Link
-                className="text-sm font-medium hover:underline underline-offset-4"
+                className="text-sm font-medium hover:underline underline-offset-8"
                 href={LINK.services}
               >
                 Services
               </Link>
               <Link
-                className="text-sm font-medium hover:underline underline-offset-4"
+                className="text-sm font-medium hover:underline underline-offset-8"
                 href={LINK.contact}
               >
                 Contact

@@ -13,28 +13,24 @@ export function Home() {
     <div className="flex flex-col min-h-screen justify-center">
       <main className="flex-1">
         <section
-          className="bg-cover bg-center  "
+          className="bg-cover bg-center"
           style={{
-            backgroundImage: "url(/images/br1.JPG)",
+            backgroundImage: "url(/images/k4.JPG)",
           }}
         >
           <div className="h-full flex">
             <div className=" flex flex-col gap-1 text-left mt-52 py-16 px-4 space-y-4 sm:px-20">
-              <h1 className=" text-white text-3xl sm:text-4xl font-semibold px-2 ">
-                What will you build next?
-              </h1>
-              <p className="sm:text-lg px-2">
-                <span className="bg-orange-300 inline">
+              <h1 className=" text-white text-3xl sm:text-4xl px-2 ">What will you build next?</h1>
+              <p className="sm:text-xl px-2">
+                <span className="bg-amber-500 inline">
                   &nbsp;Elevating Lifestyles in Atlanta through Inspired Design.
                 </span>
               </p>
-              <p className="sm:text-lg px-2">
-                <span className="bg-orange-300 inline">&nbsp; One home at a time.</span>
+              <p className="sm:text-xl px-2">
+                <span className="bg-amber-500 inline">&nbsp;One home at a time.</span>
               </p>
               <Link href={LINK.contact}>
-                <Button className="bg-gray-900 text-white px-6 py-2 font-semibold">
-                  {TEXT.CTA}
-                </Button>
+                <Button className="bg-gray-800 text-gray-100 px-6 py-6">{TEXT.CTA}</Button>
               </Link>
             </div>
           </div>
@@ -65,6 +61,17 @@ export function Home() {
               </Card>
               <Card>
                 <CardHeader>
+                  <h3 className="text-lg font-bold">Kitchen & Bath</h3>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-500 ">
+                    We specialize in kitchen and bath remodels, creating beautiful and functional
+                    spaces for your family.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
                   <h3 className="text-lg font-bold">Home Remodeling</h3>
                 </CardHeader>
                 <CardContent>
@@ -76,16 +83,33 @@ export function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <h3 className="text-lg font-bold">Kitchen & Bath</h3>
+                  <h3 className="text-lg font-bold">Roofing repair or replacement</h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 ">
-                    We specialize in kitchen and bath remodels, creating beautiful and functional
-                    spaces for your family.
+                    Elevate your home with our top-notch roofing services, ensuring lasting
+                    protection and appealing aesthetics.
                   </p>
                 </CardContent>
               </Card>
             </div>
+            <div className="">
+              <Link href={LINK.services}>
+                <Button className="bg-gray-200 text-gray-900 px-6 py-6 w-full">Our Services</Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="w-full flex flex-col justify-center py-12 md:py-24 lg:py-32 bg-amber-400">
+          <div className="container space-y-6 px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Why remodel?</h2>
+            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
+              Remodeling your home offers numerous benefits including increased comfort and
+              functionality, enhanced aesthetics, improved energy efficiency, increased home value,
+              enhanced livability, and the opportunity for personalization, allowing you to create a
+              space that aligns with your needs, style, and preferences while potentially saving on
+              energy costs and increasing the market value of your property.
+            </p>
           </div>
         </section>
         <section className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-yellow-100">
