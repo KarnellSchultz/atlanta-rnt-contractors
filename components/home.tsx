@@ -132,54 +132,42 @@ export function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center space-x-2">
-                    <Avatar
-                      alt="User Image"
-                      className="w-10 h-10"
-                      src="/placeholder.svg?height=40&width=40"
-                    />
+                    <Avatar className="w-10 h-10" />
                     <h3 className="text-lg font-bold">John Doe</h3>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 ">
-                    "Atlanta Home Construction did an amazing job on our new home. The team was
-                    professional and the project was completed on time and on budget."
+                    {` "Atlanta Home Construction did an amazing job on our new home. The team was
+                    professional and the project was completed on time and on budget."`}
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <div className="flex items-center space-x-2">
-                    <Avatar
-                      alt="User Image"
-                      className="w-10 h-10"
-                      src="/placeholder.svg?height=40&width=40"
-                    />
+                    <Avatar className="w-10 h-10" />
                     <h3 className="text-lg font-bold">Jane Smith</h3>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 ">
-                    "We recently had our kitchen remodeled and couldn't be happier with the results.
-                    Highly recommend Atlanta Home Construction!"
+                    {` "We recently had our kitchen remodeled and couldn't be happier with the results.
+                    Highly recommend Atlanta Home Construction!"`}
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <div className="flex items-center space-x-2">
-                    <Avatar
-                      alt="User Image"
-                      className="w-10 h-10"
-                      src="/placeholder.svg?height=40&width=40"
-                    />
+                    <Avatar className="w-10 h-10" />
                     <h3 className="text-lg font-bold">Sara Johnson</h3>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500 ">
-                    "Excellent craftsmanship and attention to detail. Our new bathroom is a dream
-                    come true."
+                    {`    "Excellent craftsmanship and attention to detail. Our new bathroom is a dream
+                    come true."`}
                   </p>
                 </CardContent>
               </Card>
