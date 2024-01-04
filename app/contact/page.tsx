@@ -1,6 +1,7 @@
+import { ContactForm } from "@/components/form";
 import Link from "next/link";
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <Link href={"/"} className="cursor-pointer">
@@ -9,6 +10,7 @@ export default function Home() {
           <span>Contractors</span>
         </h1>
       </Link>
+      <ContactForm />
 
       <div className="max-w-5xl text-center p-6 w-full items-center justify-between">
         <Link href="mailto:info@atlantarntcontractors.com">info@atlantarntcontractors.com</Link>
