@@ -13,7 +13,7 @@ export default function ContactPage() {
       <ContactForm />
 
       <div className="max-w-5xl text-center p-6 w-full items-center justify-between">
-        <Link href="mailto:info@atlantarntcontractors.com">info@atlantarntcontractors.com</Link>
+        <Link href="mailto:info@atlantarntcontractors.com">{process.env.BUSINESS_EMAIL}</Link>
       </div>
     </main>
   );

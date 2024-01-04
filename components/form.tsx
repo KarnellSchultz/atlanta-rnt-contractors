@@ -11,22 +11,22 @@ export function ContactForm() {
         <CardDescription className="text-gray-500">
           Please fill out the form below and we will get back to you as soon as possible.
         </CardDescription>
-        <div className="flex py-2 gap-2">
+        <div className="flex py-2 gap-2 focus-visible:ring-amber-500">
           <Link
             className="flex gap-2 justify-center items-center"
-            href="mailto:info@g2sitework.com"
+            href={`mailto:${process.env.BUSINESS_EMAIL}`}
           >
             <MailboxIcon className="w-5 h-5" />
-            <span className="text-orange-500">info@atlantarntcontractors.com</span>
+            <span className="text-orange-500 ">{process.env.BUSINESS_EMAIL}</span>
           </Link>
         </div>
-        <div className="flex py-2 gap-2">
+        <div className="flex py-2 gap-2 focus-visible:ring-amber-500">
           <Link
             className="flex gap-2 justify-center items-center"
-            href={`tel:${process.env.PHONE_NUMBER}`}
+            href={`tel:${process.env.BUSINESS_PHONE}`}
           >
             <Phone className="w-5 h-5" />
-            <span className="text-orange-500">{process.env.PHONE_NUMBER}</span>
+            <span className="text-orange-500">{process.env.BUSINESS_PHONE}</span>
           </Link>
         </div>
       </CardHeader>
