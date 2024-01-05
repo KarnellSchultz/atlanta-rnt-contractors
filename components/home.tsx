@@ -30,7 +30,7 @@ export function Home() {
                 <span className="bg-amber-500 inline">&nbsp;One home at a time.</span>
               </p>
               <Link href={LINK.contact}>
-                <Button className="bg-gray-800 text-gray-100 px-6 py-6">{TEXT.CTA}</Button>
+                <Button className="bg-gray-800 text-gray-100 px-6 py-6">{TEXT.GET_A_QUOTE}</Button>
               </Link>
             </div>
           </div>
@@ -100,7 +100,7 @@ export function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full flex flex-col justify-center py-12 md:py-24 lg:py-32 bg-amber-400">
+        <section className="w-full flex flex-col justify-center py-12 md:py-24 lg:py-32 ">
           <div className="container space-y-6 px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Why remodel?</h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">

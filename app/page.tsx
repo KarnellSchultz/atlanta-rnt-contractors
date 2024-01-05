@@ -4,6 +4,7 @@ import { Avatar } from "@/components/ui/avatar";
 import { BRAND_NAME, LINK, TEXT } from "@/lib/constants";
 import Link from "next/link";
 import Image from "next/image";
+import { KeyAttributes } from "@/components/key-attributes";
 
 export default function Page() {
   return (
@@ -30,7 +31,9 @@ export default function Page() {
                   <span className="bg-amber-500 inline">&nbsp;One home at a time.</span>
                 </p>
                 <Link href={LINK.contact}>
-                  <Button className="bg-gray-800 text-gray-100 px-6 py-6">{TEXT.CTA}</Button>
+                  <Button className="bg-gray-800 hover:bg-gray-950 text-gray-100 px-6 py-6">
+                    {TEXT.GET_A_QUOTE}
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -95,48 +98,49 @@ export default function Page() {
               </div>
               <div className="">
                 <Link href={LINK.services}>
-                  <Button className="bg-gray-200 text-gray-900 px-6 py-6 w-full hover:bg-gray-300">
+                  <Button className="bg-gray-300 hover:bg-gray-200 text-gray-900 px-6 py-6 w-full">
                     Our Services
                   </Button>
                 </Link>
               </div>
             </div>
           </section>
-          <section className="w-full flex flex-col justify-center items-center py-12 md:py-24 lg:py-32 bg-amber-500">
-            <div className="container sm:grid sm:grid-cols-3 gap-4 space-y-6 px-4 md:px-6">
+          <section className="w-full flex flex-col justify-center items-center py-12 md:py-24 lg:py-32 bg-amber-400 ">
+            <div className="container sm:grid sm:grid-cols-3 gap-4 space-y-6 px-4 md:px-6 items-center">
               <Image
                 className="sm:col-span-2 space-y-6 sm:px-4 md:px-6"
-                src={"/images/br1.JPG"}
-                style={{ objectFit: "cover" }}
+                src={"/images/k3.JPG"}
                 alt={""}
                 width={800}
                 height={370}
                 sizes={"(min-width: 1024px) 800px, 100vw"}
               />
               <div className="flex gap-2 flex-col">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-2xl">
+                <h2 className="font-bold text-lg tracking-tighter sm:text-2xl">
                   We renovate everything from bathrooms to new builds
                 </h2>
-                <p className="max-w-[900px] text-gray-800 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
+                <p className="max-w-[900px] text-gray-800 lg:text-base/relaxed xl:text-xl/relaxed ">
                   Our team specializes in providing comprehensive renovation services, spanning from
                   transforming bathrooms to constructing new buildings.
                 </p>
               </div>
             </div>
           </section>
-
+          <section className="w-full flex justify-center py-12 md:py-24 lg:py-32">
+            <KeyAttributes />
+          </section>{" "}
           <section className="w-full flex flex-col justify-center items-center py-12 md:py-24 lg:py-32 bg-amber-300">
-            <div className="container sm:grid sm:grid-cols-3 gap-4 space-y-6 px-4 md:px-6">
+            <div className="container sm:grid sm:grid-cols-[350px_1fr] flex flex-col gap-4 space-y-6 px-4 md:px-6 ">
               <Image
-                className="sm:col-span-2 sm:col-start-2 space-y-6 sm:px-4 md:px-6"
+                className="space-y-6 sm:px-4 md:px-6"
                 src={"/images/br4.JPG"}
                 alt={""}
                 width={800}
-                height={370}
+                height={500}
                 sizes={"(min-width: 1024px) 800px, 100vw"}
               />
               <div className="flex gap-2 flex-col sm:col-start-1 sm:row-start-1 ">
-                <h2 className="text-3xl  font-bold tracking-tighter sm:text-2xl">Why remodel?</h2>
+                <h2 className="text-lg  font-bold tracking-tighter sm:text-2xl">Why remodel?</h2>
                 <p
                   className="max-w-[900px] text-gray-800 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed sm:text-sm
                 "
@@ -151,9 +155,8 @@ export default function Page() {
               </div>
             </div>
           </section>
-
           <section
-            className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-gray-200"
+            className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-slate-100"
             id="testimonials"
           >
             <div className="container space-y-12 px-4 md:px-6">
@@ -209,48 +212,18 @@ export default function Page() {
               </div>
             </div>
           </section>
-          <section className="w-full py-12 md:py-24 lg:py-32" id="contact">
-            <div className="container px-4 md:px-6 flex flex-col ">
+          <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center" id="contact">
+            <div className="container px-4 md:px-6 flex flex-col">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Contact Us</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Ready to start your next project? Get in touch with us today.
                 </p>
-              </div>
-              <div className="mt-8 flex flex-col justify-center items-center gap-8">
-                <div className="grid gap-4 sm:w-1/3 w-1/2 ">
-                  <label className="text-sm font-medium" htmlFor="name">
-                    Full Name
-                  </label>
-                  <input
-                    className="p-2 rounded border border-gray-300 w-full"
-                    id="name"
-                    type="text"
-                  />
-                </div>
-                <div className="grid gap-4 sm:w-1/3 w-1/2">
-                  <label className="text-sm font-medium" htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    className="p-2 rounded border border-gray-300 w-full"
-                    id="email"
-                    type="email"
-                  />
-                </div>
-                <div className="grid gap-4 sm:w-1/3 w-1/2">
-                  <label className="text-sm font-medium" htmlFor="message">
-                    Message
-                  </label>
-                  <textarea
-                    className="p-2 rounded border border-gray-300 w-full"
-                    id="message"
-                    rows={6}
-                  />
-                </div>
-              </div>
-              <div className="mt-4 flex justify-center">
-                <Button className="px-6 py-2 rounded-full font-semibold">Submit</Button>
+                <Link href={LINK.contact}>
+                  <Button className="bg-gray-800 hover:bg-gray-950 text-gray-100 px-6 py-6">
+                    {TEXT.GET_A_QUOTE}
+                  </Button>
+                </Link>
               </div>
             </div>
           </section>

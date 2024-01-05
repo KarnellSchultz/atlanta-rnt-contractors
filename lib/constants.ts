@@ -5,12 +5,13 @@ export const LINK = {
   contact: "/contact",
   projects: "/projects",
   services: "/services",
-  gallery: "/gallery",
+  ourWork: "/our-work",
   notFound: "/404",
   privacyPolicy: "/privacy-policy",
   termsOfService: "/terms-of-service",
 } as const;
 
 export const TEXT = {
-  CTA: "Get a Quote",
+  GET_A_QUOTE: "Get a Quote",
+  CONTACT_US: "Contact Us",
 } as const;

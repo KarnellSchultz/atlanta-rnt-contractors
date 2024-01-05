@@ -16,7 +16,7 @@ export const SubmitButton = () => {
   return (
     <Button
       type="submit"
-      className="w-full bg-black focus-visible:ring-gray-700 text-white"
+      className="w-full focus-visible:ring-gray-700 text-white bg-gray-800 hover:bg-gray-950"
       aria-disabled={pending}
     >
       {pending ? "Submitting..." : "Submit"}
@@ -26,6 +26,7 @@ export const SubmitButton = () => {
 const initState = {
   name: "",
   email: "",
+  phone: "",
   message: "",
 };
 export const Form = () => {
@@ -55,6 +56,17 @@ export const Form = () => {
         />
       </div>
       <div className="space-y-2">
+        <Label htmlFor="phone-number">Phone Number</Label>
+        <Input
+          className="w-full focus-visible:ring-amber-500"
+          id="phone-number"
+          name="phone-number"
+          placeholder="404-555-5555"
+          required
+          type="tel"
+        />
+      </div>
+      <div className="space-y-2">
         <Label htmlFor="message">Message</Label>
         <Textarea
           className="w-full min-h-[100px] focus-visible:ring-amber-500"
@@ -72,9 +84,7 @@ export const Form = () => {
       )}
       {/* Hp fields */}
       <div className="absolute top-0 left-0 opacity-0 w-0 h-0 -z-10 ">
-        <Input id="h-email" name="h-email" type="email" />
         <Input id="h-name" name="h-name" type="text" />
-        <Input id="h-text" name="h-message" type="text" />
       </div>
     </form>
   );

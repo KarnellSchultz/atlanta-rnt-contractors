@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-
 import { GeistSans } from "geist/font/sans";
-import "./globals.css";
 import Link from "next/link";
 import { HomeIcon } from "@/components/HomeIcon";
 import { BRAND_NAME, LINK } from "@/lib/constants";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Atlanta R&T Contractors",
@@ -29,22 +28,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </Link>
               <Link
                 className="text-sm font-medium hover:underline underline-offset-8"
-                href={LINK.services}
+                href={LINK.ourWork}
               >
-                Services
+                Our Work
               </Link>
               <Link
                 className="text-sm font-medium hover:underline underline-offset-8"
                 href={LINK.contact}
               >
-                Contact
+                Contact Us
               </Link>
             </nav>
           </header>
           {children}
         </>
-        <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-          <p className="text-xs text-gray-500">© {BRAND_NAME}. All rights reserved.</p>
+        <footer className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
           <section>
             <div className="text-lg underline">contact us</div>
             <div className="text-xs text-gray-500">
@@ -58,14 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </Link>
             </div>
           </section>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Privacy Policy
-            </Link>
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Terms of Service
-            </Link>
-          </nav>
+          <p className="text-xs text-gray-500">© {BRAND_NAME} 2024</p>
         </footer>
       </body>
     </html>

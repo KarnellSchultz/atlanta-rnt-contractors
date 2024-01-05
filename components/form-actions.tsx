@@ -9,11 +9,9 @@ export const submitAction = async (_: any, formData: FormData) => {
     email: formData.get("email"),
     message: formData.get("message"),
     honeypotName: formData.get("h-name"),
-    honeypotEmail: formData.get("h-email"),
-    honeypotMessage: formData.get("h-message"),
   };
 
-  if (rawFormData.honeypotName || rawFormData.honeypotEmail || rawFormData.honeypotMessage) {
+  if (rawFormData.honeypotName) {
     console.log("Honeypot triggered - No email sent");
     return;
   }

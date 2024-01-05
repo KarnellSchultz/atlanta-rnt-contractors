@@ -5,11 +5,12 @@ import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/com
 
 export function ContactForm() {
   return (
-    <Card className="max-w-lg mx-auto p-8 space-y-6">
-      <CardHeader className="mb-6">
+    <Card className="max-w-lg  p-8 space-y-6">
+      <CardHeader>
         <CardTitle className="text-2xl font-semibold">Contact Us</CardTitle>
         <CardDescription className="text-gray-500">
-          Please fill out the form below and we will get back to you as soon as possible.
+          Call or email us directly, or fill out the form below, and we will get back to you as soon
+          as possible.
         </CardDescription>
         <div className="flex py-2 gap-2 focus-visible:ring-amber-500">
           <Link
