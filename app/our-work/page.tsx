@@ -86,7 +86,7 @@ export default function ContactPage() {
                 src={data.src}
                 width="600"
                 sizes="(max-width: 768px) 100vw, 33vw"
-              />
+            />
             </div>
           );
         })}

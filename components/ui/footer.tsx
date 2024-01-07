@@ -13,7 +13,7 @@ export const Footer = () => {
 };
 
 export const FooterContactForm = () => (
-  <div className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center px-4 md:px-6 ">
+  <div className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
     <section
       className="w-full py-12 md:py-24 lg:py-32 flex justify-center bg-gray-100"
       id="contact"
