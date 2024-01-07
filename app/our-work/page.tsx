@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { LINK, TEXT } from "@/lib/constants";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,6 +63,11 @@ const IMAGE_GALLERY_DATA = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Our Work",
+  description: "Atlanta R&T Contractors is a full-service contracting company.",
+};
+
 export default function ContactPage() {
   return (
     <main className="flex min-h-screen flex-col items-center py-24 px-4">
@@ -88,11 +94,6 @@ export default function ContactPage() {
           );
         })}
       </div>
-      <Link href={LINK.contact}>
-        <Button className="bg-gray-800 hover:bg-gray-950 text-gray-100 px-6 py-6">
-          {TEXT.CONTACT_US}
-        </Button>
-      </Link>
     </main>
   );
 }

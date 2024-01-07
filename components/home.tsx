@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
-import { BRAND_NAME, LINK, TEXT } from "@/lib/constants";
+import { LINK, TEXT } from "@/lib/constants";
 
 export function Home() {
   return (

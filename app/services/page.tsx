@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Work",
+  description: "Atlanta R&T Contractors is a full-service contracting company.",
+};
 
 export default function Home() {
   return (

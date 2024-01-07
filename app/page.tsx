@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
-import { BRAND_NAME, LINK, TEXT } from "@/lib/constants";
+import { LINK, TEXT } from "@/lib/constants";
 import Link from "next/link";
 import Image from "next/image";
 import { KeyAttributes } from "@/components/key-attributes";
@@ -209,21 +209,6 @@ export default function Page() {
                     </p>
                   </CardContent>
                 </Card>
-              </div>
-            </div>
-          </section>
-          <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center" id="contact">
-            <div className="container px-4 md:px-6 flex flex-col">
-              <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Contact Us</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Ready to start your next project? Get in touch with us today.
-                </p>
-                <Link href={LINK.contact}>
-                  <Button className="bg-gray-800 hover:bg-gray-950 text-gray-100 px-6 py-6">
-                    {TEXT.GET_A_QUOTE}
-                  </Button>
-                </Link>
               </div>
             </div>
           </section>

@@ -1,7 +1,10 @@
-export const BRAND_NAME = "Atlanta R&T Contractors";
+export const BRAND_NAME = {
+  SHORT: "ATL R&T",
+  LONG: "Atlanta R&T Contractors",
+};
 export const LINK = {
   home: "/",
-  about: "/about",
+  about: "/about-us",
   contact: "/contact",
   projects: "/projects",
   services: "/services",
