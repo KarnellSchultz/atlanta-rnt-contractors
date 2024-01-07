@@ -5,7 +5,7 @@ import { BRAND_NAME, LINK, TEXT } from "@/lib/constants";
 
 export const Footer = () => {
   return (
-    <footer className="px-4 m-6 md:px-6">
+    <footer className="">
       <FooterContactForm />
       <FooterDetails />
     </footer>
@@ -13,7 +13,7 @@ export const Footer = () => {
 };
 
 export const FooterContactForm = () => (
-  <div className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+  <div className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center md:px-6">
     <section
       className="w-full py-12 md:py-24 lg:py-32 flex justify-center bg-gray-100"
       id="contact"
@@ -39,8 +39,8 @@ export const FooterContactForm = () => (
 
 export const FooterDetails = () => {
   return (
-    <section className="border-t grid grid-cols-2">
-      <div className="flex gap-4 pt-6">
+    <section className="border-t sm:grid sm:grid-cols-2 flex flex-col justify-center items-center gap-4 px-6">
+      <div className="flex flex-col gap-4 pt-6">
         <div className="text-xs text-gray-500">
           <span>Phone:</span>{" "}
           <Link href={`tel:${process.env.BUSINESS_PHONE}`}>{process.env.BUSINESS_PHONE}</Link>

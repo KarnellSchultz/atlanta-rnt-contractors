@@ -155,7 +155,7 @@ export default function Page() {
             </div>
           </section>
           <section
-            className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-slate-100"
+            className="w-full flex justify-center py-12 md:py-24 lg:py-32"
             id="testimonials"
           >
             <div className="container space-y-12 px-4 md:px-6">

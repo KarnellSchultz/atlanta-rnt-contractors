@@ -10,7 +10,7 @@ const aboutUsText = `Welcome to Atlanta R&T Contractors, a family-owned business
 
 export default function ContactPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center py-24 px-4">
+    <main className="flex min-h-screen flex-col items-center py-20 px-4">
       <section className="sm:grid sm:grid-cols-2 flex flex-col items-center p-4">
         <h1 className=" col-span-full md:text-6xl text-4xl font-bold flex flex-col text-center">
           About Us
