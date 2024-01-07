@@ -48,7 +48,7 @@ export const FooterDetails = () => {
           </Link>
         </div>
       </div>
-      <p className="text-xs text-gray-500 flex items-end justify-end ">© {BRAND_NAME.SHORT} 2024</p>
+      <p className="text-xs text-gray-500 flex items-end justify-end ">© {BRAND_NAME.LONG} 2024</p>
     </section>
   );
 };
