@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="flex min-h-screen flex-col items-center py-24 px-4 gap-10">
-      <h1 className="col-span-full text-3xl font-bold mb-6 text-center">About Us</h1>
+      <h1 className=" col-span-full md:text-6xl text-4xl font-bold pb-4 flex flex-col text-center">
+        About Us
+      </h1>
       <section className="sm:grid sm:grid-cols-2 flex flex-col items-center gap-4">
         <div>
           <p className="text-gray-500 text-lg font-normal">{aboutUsText}</p>

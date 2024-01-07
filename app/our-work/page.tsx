@@ -72,23 +72,23 @@ export default function ContactPage() {
   return (
     <main className="flex min-h-screen flex-col items-center py-24 px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-7xl mx-auto p-4">
-        <h2 className="col-span-full text-3xl font-bold mb-6 text-center">
+        <h1 className=" col-span-full md:text-6xl text-4xl font-bold pb-4 flex flex-col text-center">
           Our Work
           <p className="text-gray-500 text-lg font-normal">
             {`Here are some of the projects we've worked on recently. We're proud of what we've achieved
           and we're excited to share them with you.`}
           </p>
-        </h2>
+        </h1>
 
         {IMAGE_GALLERY_DATA.map((data, index) => {
           return (
             <div className="relative overflow-hidden rounded-lg" key={index}>
               <Image
                 alt={data.alt}
-                className="aspect-square object-cover w-full"
                 height="600"
                 src={data.src}
                 width="600"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           );

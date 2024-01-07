@@ -11,7 +11,6 @@ export const submitAction = async (_: any, formData: FormData) => {
     phone: formData.get("phone"),
     honeypotName: formData.get("h-name"),
   };
-  console.log("🚀 ~ file: form-actions.tsx:13 ~ submitAction ~ rawFormData:", rawFormData);
 
   if (rawFormData.honeypotName !== "") {
     console.log("Honeypot triggered - No email sent");
