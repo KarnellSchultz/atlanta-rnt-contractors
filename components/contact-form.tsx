@@ -56,13 +56,12 @@ export const Form = () => {
         />
       </div>
       <div className="space-y-2">
-        <Label htmlFor="phone-number">Phone Number</Label>
+        <Label htmlFor="phone">Phone Number</Label>
         <Input
           className="w-full focus-visible:ring-amber-500"
-          id="phone-number"
-          name="phone-number"
+          id="phone"
+          name="phone"
           placeholder="404-555-5555"
-          required
           type="tel"
         />
       </div>

@@ -13,16 +13,21 @@ export const Footer = () => {
 };
 
 export const FooterContactForm = () => (
-  <div className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-    <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center" id="contact">
+  <div className="flex flex-col gap-4 sm:flex-row sm:justify-around py-6 w-full shrink-0 items-center px-4 md:px-6 ">
+    <section
+      className="w-full py-12 md:py-24 lg:py-32 flex justify-center bg-gray-100"
+      id="contact"
+    >
       <div className="container px-4 md:px-6 flex flex-col">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Contact Us</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            Ready to start your next project?
+          </h2>
           <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Ready to start your next project? Get in touch with us today.
+            {`Let's build something great together. Get in touch with us today for a free quote.`}
           </p>
           <Link href={LINK.contact}>
-            <Button className="bg-gray-800 hover:bg-gray-950 text-gray-100 px-6 py-6">
+            <Button className="bg-gray-800 hover:bg-gray-950 active:border-red-300 text-gray-100 px-6 py-6">
               {TEXT.GET_A_QUOTE}
             </Button>
           </Link>
@@ -35,8 +40,7 @@ export const FooterContactForm = () => (
 export const FooterDetails = () => {
   return (
     <section className="border-t grid grid-cols-2">
-      <div>
-        <div className="text-lg underline">contact us</div>
+      <div className="flex gap-4 pt-6">
         <div className="text-xs text-gray-500">
           <span>Phone:</span>{" "}
           <Link href={`tel:${process.env.BUSINESS_PHONE}`}>{process.env.BUSINESS_PHONE}</Link>

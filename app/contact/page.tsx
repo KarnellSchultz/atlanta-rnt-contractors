@@ -1,4 +1,10 @@
 import { ContactForm } from "@/components/form";
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Atlanta R&T Contractors",
+  description: "Atlanta R&T Contractors is a full-service contracting company.",
+};
 
 export default function ContactPage() {
   return (

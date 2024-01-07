@@ -8,10 +8,12 @@ export const submitAction = async (_: any, formData: FormData) => {
     name: formData.get("name"),
     email: formData.get("email"),
     message: formData.get("message"),
+    phone: formData.get("phone"),
     honeypotName: formData.get("h-name"),
   };
+  console.log("🚀 ~ file: form-actions.tsx:13 ~ submitAction ~ rawFormData:", rawFormData);
 
-  if (rawFormData.honeypotName) {
+  if (rawFormData.honeypotName !== "") {
     console.log("Honeypot triggered - No email sent");
     return;
   }
@@ -19,7 +21,7 @@ export const submitAction = async (_: any, formData: FormData) => {
   const { data } = await resend.emails.send({
     from: process.env.RESEND_FROM_EMAIL ?? "",
     to: process.env.RESEND_TO_EMAIL ?? "",
-    subject: `${rawFormData.name} <${rawFormData.email}> email from g2sitework.com/contact `,
+    subject: `${rawFormData.name} <${rawFormData.email}> email from Atlanta R&T Contractors`,
     html: `<div>${rawFormData.message}</div>`,
   });
 

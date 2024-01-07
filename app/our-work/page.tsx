@@ -64,7 +64,7 @@ const IMAGE_GALLERY_DATA = [
 ];
 
 export const metadata: Metadata = {
-  title: "Our Work",
+  title: "Our Work - Atlanta R&T Contractors ",
   description: "Atlanta R&T Contractors is a full-service contracting company.",
 };
 

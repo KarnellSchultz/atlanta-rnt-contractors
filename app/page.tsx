@@ -5,6 +5,12 @@ import { LINK, TEXT } from "@/lib/constants";
 import Link from "next/link";
 import Image from "next/image";
 import { KeyAttributes } from "@/components/key-attributes";
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "Home - Atlanta R&T Contractors",
+  description: "Atlanta R&T Contractors is a full-service contracting company.",
+};
 
 export default function Page() {
   return (
@@ -95,13 +101,6 @@ export default function Page() {
                     </p>
                   </CardContent>
                 </Card>
-              </div>
-              <div className="">
-                <Link href={LINK.services}>
-                  <Button className="bg-gray-300 hover:bg-gray-200 text-gray-900 px-6 py-6 w-full">
-                    Our Services
-                  </Button>
-                </Link>
               </div>
             </div>
           </section>
