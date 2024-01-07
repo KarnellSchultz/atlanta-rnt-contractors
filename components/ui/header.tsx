@@ -10,18 +10,22 @@ export const Header = () => {
         <span className="hidden sm:inline">
           <HomeIcon className="h-6 w-6" />
         </span>
-        <span className="hidden sm:inline ml-2 text-sm sm:text-lg font-semibold">{BRAND_NAME.LONG}</span>
-        <span className="inline sm:hidden ml-2 text-sm sm:text-lg font-semibold">{BRAND_NAME.SHORT}</span>
+        <span className="hidden sm:inline ml-2 text-sm sm:text-lg font-semibold">
+          {BRAND_NAME.LONG}
+        </span>
+        <span className="inline sm:hidden ml-2 text-sm sm:text-lg font-semibold">
+          {BRAND_NAME.SHORT}
+        </span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
-        <Link className="text-sm font-medium hover:underline underline-offset-8" href={LINK.about}>
-          About Us
-        </Link>
         <Link
           className="text-sm font-medium hover:underline underline-offset-8"
           href={LINK.ourWork}
         >
           Our Work
+        </Link>
+        <Link className="text-sm font-medium hover:underline underline-offset-8" href={LINK.about}>
+          About Us
         </Link>
         <Link
           className="text-sm font-medium hover:underline underline-offset-8"
