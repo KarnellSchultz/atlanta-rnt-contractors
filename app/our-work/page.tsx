@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { LINK, TEXT } from "@/lib/constants";
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 const IMAGE_GALLERY_DATA = [
   {
